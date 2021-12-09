@@ -31,6 +31,8 @@ def Main():
         print("Error: no arguments given")
     elif(len(sys.argv) < 3):
         print("Error: please specify show and season")
+    elif(len(sys.argv) > 3):
+        print("Error: too many arguments, maybe put quotes around show name")
     else:
         getRatings(sys.argv[1], int(sys.argv[2]))
 
